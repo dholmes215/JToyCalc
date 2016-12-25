@@ -39,6 +39,7 @@ public final class Calculator {
     private Operation storedOperation = Operation.None;
     private Display currentDisplay = Display.Input;
     private boolean equalsPressed = false;
+    private boolean error = false;
 
     /**
      * The operations the calculator can perform.
@@ -69,7 +70,7 @@ public final class Calculator {
      */
     public void pressDigit(int digit) {
 
-        if (equalsPressed) {
+        if (equalsPressed || error) {
             reset();
         }
         
@@ -131,6 +132,9 @@ public final class Calculator {
      */
     public String getDisplayString() {
 
+        if (error) {
+            return "error";
+        }
         return "" + getDisplayValue();
     }
 
@@ -171,7 +175,11 @@ public final class Calculator {
             accumulator *= input;
             break;
         case Divide:
-            accumulator /= input;
+            if (input == 0) {
+                error = true;
+            } else {
+                accumulator /= input;
+            }
             break;
         }
     }
@@ -197,5 +205,6 @@ public final class Calculator {
         storedOperation = Operation.None;
         currentDisplay = Display.Input;
         equalsPressed = false;
+        error = false;
     }
 }
