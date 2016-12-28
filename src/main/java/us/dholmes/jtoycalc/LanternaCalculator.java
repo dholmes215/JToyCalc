@@ -124,8 +124,6 @@ public final class LanternaCalculator {
             public void onUnhandledInput(Window basePane, KeyStroke keyStroke,
                     AtomicBoolean hasBeenHandled) {
 
-                System.out.println("Keystroke: " + keyStroke);
-
                 if (keyStroke.getKeyType() == KeyType.Escape) {
                     System.exit(0);
                 }
