@@ -20,4 +20,4 @@
  * JToyCalc is a toy calculator. It's intended as a personal project to play
  * with various technologies, not as a generally useful application.
  */
-package us.dholmes.jtoycalc;
+package us.dholmes.toycalc;

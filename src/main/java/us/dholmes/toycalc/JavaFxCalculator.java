@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with JToyCalc.  If not, see <http://www.gnu.org/licenses/>.
  */
-package us.dholmes.jtoycalc;
+package us.dholmes.toycalc;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,7 +35,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Priority;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
-import us.dholmes.jtoycalc.Calculator.Operation;
+import us.dholmes.toycalc.Calculator.Operation;
 
 /**
  * JavaFX JToyCalc application.

@@ -16,13 +16,13 @@
  * You should have received a copy of the GNU General Public License
  * along with JToyCalc.  If not, see <http://www.gnu.org/licenses/>.
  */
-package us.dholmes.jtoycalc;
+package us.dholmes.toycalc;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import us.dholmes.jtoycalc.Calculator.Operation;
+import us.dholmes.toycalc.Calculator.Operation;
 
 /**
  * Calculator JUnit tests.

@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with JToyCalc.  If not, see <http://www.gnu.org/licenses/>.
  */
-package us.dholmes.jtoycalc;
+package us.dholmes.toycalc;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -44,7 +44,7 @@ import com.googlecode.lanterna.screen.TerminalScreen;
 import com.googlecode.lanterna.terminal.DefaultTerminalFactory;
 import com.googlecode.lanterna.terminal.Terminal;
 
-import us.dholmes.jtoycalc.Calculator.Operation;
+import us.dholmes.toycalc.Calculator.Operation;
 
 /**
  * Lanterna JToyCalc application.

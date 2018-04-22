@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with JToyCalc.  If not, see <http://www.gnu.org/licenses/>.
  */
-package us.dholmes.jtoycalc;
+package us.dholmes.toycalc;
 
 import java.awt.Component;
 import java.awt.Container;
@@ -33,8 +33,7 @@ import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 
-import us.dholmes.jtoycalc.Calculator;
-import us.dholmes.jtoycalc.Calculator.Operation;
+import us.dholmes.toycalc.Calculator.Operation;
 
 /**
  * Swing JToyCalc application.
