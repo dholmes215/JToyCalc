@@ -32,6 +32,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
+import javax.swing.UIManager;
 
 import us.dholmes.toycalc.Calculator.Operation;
 
@@ -134,6 +135,12 @@ public final class SwingCalculator {
      * @param args Command-line arguments.
      */
     public static void main(String[] args) {
+
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (Exception e) {
+            System.err.println("Error setting look-and-feel: " + e);
+        }
 
         SwingUtilities.invokeLater(SwingCalculator::createAndShowGui);
     }

@@ -114,5 +114,11 @@ private fun createDigitButton(digit: Int, calc: Calculator): JButton {
  */
 fun main(args: Array<String>) {
 
+    try {
+        UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName())
+    } catch (e: Exception) {
+        System.err.println("Error setting look-and-feel: $e")
+    }
+
     SwingUtilities.invokeLater { createAndShowGui() }
 }
